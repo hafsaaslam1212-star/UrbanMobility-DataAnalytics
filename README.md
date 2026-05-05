@@ -7,38 +7,41 @@ The organisation operates across shuttle transport, last-mile delivery, EV charg
 
 Despite increasing demand and business expansion, NorthStar is experiencing significant operational challenges including:
 
-Delivery failures and delays
-Increasing customer complaints
-Rising operational costs exceeding revenue growth
+* Item 1 Delivery failures and delays
+* Item 2 Increasing customer complaints
+* Item 3 Rising operational costs exceeding revenue growth
 
 The main issue is fragmented data systems, where structured relational datasets and semi-structured platform data are not integrated into a unified analytical view.
 
-Project Objective
+**Project Objective**
 
 The main objective of this project is to design an integrated data analytics solution that:
 
-Identifies key operational inefficiencies across the organisation
-Analyses failure patterns across hubs and zones
-Evaluates customer complaints and their financial impact
-Examines relationships between operational variables such as drivers, routes, and incidents
-Designs a NoSQL database for handling complex, event-driven operational data
-Key Research Questions
+* Item 1 Identifies key operational inefficiencies across the organisation
+* Item 2 Analyses failure patterns across hubs and zones
+* Item 3 Evaluates customer complaints and their financial impact
+* Item 4 Examines relationships between operational variables such as drivers, routes, and incidents
+* Item 5 Designs a NoSQL database for handling complex, event-driven operational data
+
+
+**Key Research Questions**
 
 This project is guided by the following analytical questions:
 
-What are the highest failure rates, and what factors contribute to them across hubs and zones?
-Does driver behaviour, such as manual route overrides, affect service quality?
-Which customers generate repeated failures and compensation costs?
-Can operational indicators predict delivery failures and incident severity?
-Technologies Used
+* Item 1 What are the highest failure rates, and what factors contribute to them across hubs and zones?
+* Item 2 Does driver behaviour, such as manual route overrides, affect service quality?
+* Item 3 Which customers generate repeated failures and compensation costs?
+* Item 4 Can operational indicators predict delivery failures and incident severity?
+
+**Technologies Used**
 
 The following tools and technologies were used in this project:
 
-1.R (sqldf, dplyr, ggplot2) → SQL-based analysis, statistical modelling, and data visualisation
-2.Python (pandas, numpy, matplotlib, seaborn) → Data processing, transformation, and feature engineering
-3.MongoDB Atlas → NoSQL database design for event-driven and semi-structured data
-4.Google Colab → Development environment for analysis and execution
-5.GitHub → Version control and project documentation management
+* Item 1 R (sqldf, dplyr, ggplot2) → SQL-based analysis, statistical modelling, and data visualisation
+* Item 2 Python (pandas, numpy, matplotlib, seaborn) → Data processing, transformation, and feature engineering
+* Item 3 MongoDB Atlas → NoSQL database design for event-driven and semi-structured data
+* Item 4 Google Colab → Development environment for analysis and execution
+* Item 5 GitHub → Version control and project documentation management
 
 
 
