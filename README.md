@@ -1,7 +1,6 @@
 # NorthStar Urban Mobility & Logistics Analytics Project
-**1. Introduction
-****Overview
-**
+**1. Introduction**
+**Overview**
 This project analyses operational inefficiencies within NorthStar Urban Mobility and Logistics, a multi-service transport and delivery provider.
 The organisation operates across shuttle transport, last-mile delivery, EV charging, warehouse dispatch, and a mobile platform system.
 
