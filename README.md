@@ -1,46 +1,143 @@
-# NorthStar Urban Mobility & Logistics Analytics Project
-**1. Introduction**
+#  NorthStar Urban Mobility & Logistics Analytics Project
 
-This project analyses operational inefficiencies within NorthStar Urban Mobility and Logistics, a multi-service transport and delivery provider.
-The organisation operates across shuttle transport, last-mile delivery, EV charging, warehouse dispatch, and a mobile platform system.
+---
 
-Despite increasing demand and business expansion, NorthStar is experiencing significant operational challenges including:
+##  Overview
+This project analyses operational inefficiencies within **NorthStar Urban Mobility and Logistics**, a multi-service transport and delivery system operating across delivery, logistics, and mobile platform services.
 
-1- Delivery failures and delays
-2- Increasing customer complaints
-3- Rising operational costs exceeding revenue growth
+The system includes:
+- Last-mile delivery operations  
+- Hub-based logistics distribution  
+- Driver and vehicle management  
+- Customer complaint handling  
+- Mobile application event tracking  
 
-The main issue is fragmented data systems, where structured relational datasets and semi-structured platform data are not integrated into a unified analytical view.
+Despite operational growth, NorthStar experiences increasing performance issues including:
+- Delivery delays and failures  
+- High customer complaint volumes  
+- Inconsistent driver performance  
+- Mobile app reliability issues  
+- Rising operational costs across zones  
 
-**Project Objective**
+The core issue is **fragmented operational data**, where delivery, customer, driver, and application data are not integrated into a unified analytics system.
 
-The main objective of this project is to design an integrated data analytics solution that:
+---
 
-1- Identifies key operational inefficiencies across the organisation
-2- Analyses failure patterns across hubs and zones
-3- Evaluates customer complaints and their financial impact
-4- Examines relationships between operational variables such as drivers, routes, and incidents
-5- Designs a NoSQL database for handling complex, event-driven operational data
+##  Project Objective
+The goal of this project is to design an **integrated data analytics solution** that:
 
+- Identifies operational inefficiencies across zones and hubs  
+- Analyses delivery delay and failure patterns  
+- Evaluates customer complaints and compensation impact  
+- Examines driver behaviour and route efficiency  
+- Analyses mobile application reliability issues  
+- Implements a NoSQL model for scalable event-based data  
 
-**Key Research Questions**
+---
 
-This project is guided by the following analytical questions:
+##  Key Research Questions
+- What zones and hubs experience the highest delivery failure rates?  
+- How does driver behaviour (route overrides) affect delivery performance?  
+- Which service types generate the highest delays and failures?  
+- How are customer complaints distributed across zones and categories?  
+- What factors influence mobile app failures and API latency?  
 
-1- What are the highest failure rates, and what factors contribute to them across hubs and zones?
-2- Does driver behaviour, such as manual route overrides, affect service quality?
-3- Which customers generate repeated failures and compensation costs?
-4- Can operational indicators predict delivery failures and incident severity?
+---
 
-**Technologies Used**
+##  Technologies Used
+- **R (sqldf, dplyr, ggplot2)** → SQL-based analytics, statistical analysis, visualisation  
+- **Python (pandas, numpy, matplotlib, seaborn)** → Data cleaning, transformation, feature engineering  
+- **MongoDB Atlas** → NoSQL document database design for operational events  
+- **Google Colab** → Development and execution environment  
+- **GitHub** → Version control and project documentation  
 
-The following tools and technologies were used in this project:
+---
 
-1- R (sqldf, dplyr, ggplot2) → SQL-based analysis, statistical modelling, and data visualisation
-2- Python (pandas, numpy, matplotlib, seaborn) → Data processing, transformation, and feature engineering
-3- MongoDB Atlas → NoSQL database design for event-driven and semi-structured data
-4- Google Colab → Development environment for analysis and execution
-5- GitHub → Version control and project documentation management
+##  Workflow
 
+### 1. SQL Analysis (R)
+- SQL queries executed using `sqldf`  
+- Analysed:
+  - Delivery delays and failures  
+  - Zone-based performance  
+  - Driver employment impact  
+  - Service type risk analysis  
+- Identified key operational bottlenecks  
 
+---
 
+### 2. Statistical Analysis (R)
+- Data manipulation using `dplyr`  
+- Visualisation using `ggplot2`  
+- Analysed:
+  - Delivery status distribution  
+  - Complaint trends  
+  - Driver behaviour patterns  
+  - Route distance vs performance  
+- Identified performance gaps across zones  
+
+---
+
+### 3. Data Processing (Python)
+- Data cleaning and standardisation  
+- Feature engineering:
+  - Delivery duration calculation  
+  - Delay and failure indicators  
+  - Cost per kilometre  
+- Dataset preparation for advanced analytics  
+
+---
+
+### 4. NoSQL Database Design (MongoDB)
+- Designed document-based collections:
+  - **service_reliability_cases** → delivery outcomes + customer ratings  
+  - **logistics_activity_logs** → delivery operations by zone  
+  - **platform_usage_events** → mobile app events and latency  
+
+- Supports:
+  - Nested data structures  
+  - Event-driven analytics  
+  - Flexible schema design  
+
+---
+
+##  Key Insights (Summary)
+- Central, Airport, and East zones show the highest delivery performance issues  
+- Delivery delays are the most common operational problem  
+- Driver behaviour has a weak but noticeable impact on customer satisfaction  
+- Business and Medical service types show high failure risk  
+- Mobile app failures and high API latency affect system reliability  
+- Customer complaints are strongly linked to delivery delays  
+
+---
+
+##  Solution Approach
+The project combines multiple analytical techniques:
+
+- **Relational analysis (SQL in R)** → structured operational insights  
+- **Statistical modelling (R)** → trend detection and visualization  
+- **Python processing** → data cleaning and feature engineering  
+- **NoSQL modelling (MongoDB)** → scalable event-based architecture  
+
+This hybrid approach enables a **360-degree view of logistics operations**, improving decision-making across delivery, customer service, and platform performance.
+
+---
+
+##  Notes
+- Data is loaded from Google Drive (`northstar_dataset` folder)  
+- Each notebook runs independently  
+- MongoDB Atlas is used for cloud-based NoSQL implementation  
+- Dataset includes orders, deliveries, drivers, complaints, and app events  
+
+---
+
+##  Conclusion
+This project demonstrates how integrating **SQL, R, Python, and MongoDB** can effectively solve real-world logistics problems.
+
+By combining structured and semi-structured data, the system successfully:
+- Identifies operational inefficiencies  
+- Reveals delivery and complaint patterns  
+- Highlights driver and zone performance issues  
+- Improves understanding of mobile platform reliability  
+
+Overall, the analysis supports **data-driven decision-making** for improving efficiency, reducing failures, and enhancing customer satisfaction within NorthStar Urban Mobility and Logistics.
