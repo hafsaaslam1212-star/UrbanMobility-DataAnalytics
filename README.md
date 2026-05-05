@@ -14,3 +14,4 @@ project-root/
 │
 │── README.md
 ```
+winget install Tree
